@@ -7,11 +7,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="185.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gamesenha.gamesenha.InicioController">
    <children>
-      <ImageView fitHeight="186.0" fitWidth="600.0">
+      <ImageView fitHeight="172.0" fitWidth="581.0" layoutX="10.0" layoutY="7.0">
          <image>
             <Image url="@../../../../../../../../Users/55119/Desktop/Mega_Senha.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btnClick" layoutX="268.0" layoutY="140.0" mnemonicParsing="false" onAction="#clicouBotao" text="Button" />
+      <Button fx:id="btnClick" contentDisplay="TOP" layoutX="268.0" layoutY="140.0" mnemonicParsing="false" onAction="#clicouBotao" style="-fx-background-color: white;" styleClass="f" text="Button" />
    </children>
 </AnchorPane>

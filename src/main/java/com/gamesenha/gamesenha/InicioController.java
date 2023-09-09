@@ -13,7 +13,7 @@ public class InicioController {
     @FXML
     protected void clicouBotao(ActionEvent event){
 
-        HelloApplication.changeScreen("duplas");
+        GameApplication.changeScreen("duplas");
         System.out.println("de fato");
 
     }

@@ -8,12 +8,14 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class GameApplication extends Application {
 
     private static Stage stage;
 
     private static Scene inicioScene;
     private static Scene duplasScene;
+
+    private static Scene wordsScene;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -23,15 +25,18 @@ public class HelloApplication extends Application {
 
         stage.setTitle("inicio");
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Inicio.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(GameApplication.class.getResource("Inicio.fxml"));
 
         Parent iniciofxml = fxmlLoader.load(getClass().getResource("Inicio.fxml"));
         inicioScene = new Scene(iniciofxml);
 
-        FXMLLoader fxmlduplas = new FXMLLoader(HelloApplication.class.getResource("TelaDuplas.fxml"));
-        Parent duplasfxml = fxmlduplas.load(getClass().getResource("TelaDuplas.fxml"));
+        FXMLLoader fxmlduplas = new FXMLLoader(GameApplication.class.getResource("telaTeams.fxml"));
+        Parent duplasfxml = fxmlduplas.load(getClass().getResource("telaTeams.fxml"));
         duplasScene = new Scene(duplasfxml);
 
+        FXMLLoader fxmlwords = new FXMLLoader(GameApplication.class.getResource("telaPalavras.fxml"));
+        Parent wordsfxml = fxmlwords.load(getClass().getResource("telaPalavras.fxml"));
+        wordsScene = new Scene(wordsfxml);
 
         stage.setScene(inicioScene);
         stage.show();
@@ -47,6 +52,10 @@ public class HelloApplication extends Application {
             case "duplas":
                 stage.setScene(duplasScene);
                 stage.setTitle("duplas");
+                break;
+            case "words":
+                stage.setScene(wordsScene);
+                stage.setTitle("Inserir palavras");
         }
 
     }
