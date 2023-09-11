@@ -15,10 +15,9 @@ public class sceneRoundsController {
     private Button btnClick;
     @FXML
     protected void clicouBotao(ActionEvent event){
-        String palavra;
-        palavra = PalavraTeste.palavrao1;
 
-        lblPalavra.setText(palavra);
+
+        lblPalavra.setText(PalavraTeste.palavrao1);
 
         GameApplication.changeScreen("rodada");
 
