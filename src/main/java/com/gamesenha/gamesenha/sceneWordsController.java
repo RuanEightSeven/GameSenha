@@ -33,10 +33,15 @@ public class sceneWordsController {
     @FXML
     protected void clicouBotao(ActionEvent event){
 
-        System.out.println("Rodada começa");
+        System.out.println("x");
+        GameApplication.changeScreen("rodada");
         Palavras palavras = new Palavras();
         palavras.setPalavra1(word1.getText());
-        System.out.println(palavras.getPalavra1());
+        PalavraTeste.palavrao1 = word1.getText();
+        System.out.println(PalavraTeste.palavrao1);
     }
+
+
+
 
 }

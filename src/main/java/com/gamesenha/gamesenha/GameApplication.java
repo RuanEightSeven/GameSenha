@@ -14,8 +14,8 @@ public class GameApplication extends Application {
 
     private static Scene inicioScene;
     private static Scene duplasScene;
-
     private static Scene wordsScene;
+    private static Scene rodadaScene;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -38,6 +38,10 @@ public class GameApplication extends Application {
         Parent wordsfxml = fxmlwords.load(getClass().getResource("telaPalavras.fxml"));
         wordsScene = new Scene(wordsfxml);
 
+        FXMLLoader fxmlrodada = new FXMLLoader(GameApplication.class.getResource("telaRodada.fxml"));
+        Parent rodadafxml = fxmlrodada.load(getClass().getResource("telaRodada.fxml"));
+        rodadaScene = new Scene(rodadafxml);
+
         stage.setScene(inicioScene);
         stage.show();
     }
@@ -56,6 +60,10 @@ public class GameApplication extends Application {
             case "words":
                 stage.setScene(wordsScene);
                 stage.setTitle("Inserir palavras");
+                break;
+            case "rodada":
+                stage.setScene(rodadaScene);
+                stage.setTitle("Rodada");
         }
 
     }

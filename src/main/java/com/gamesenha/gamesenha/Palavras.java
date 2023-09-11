@@ -14,7 +14,7 @@ public class Palavras {
         private String palavra9;
         private String palavra10;
 
-        public String getPalavra1 () {
+        public String getPalavra1() {
             return palavra1;
         }
 
