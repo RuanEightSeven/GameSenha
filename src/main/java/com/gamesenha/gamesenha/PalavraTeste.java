@@ -14,6 +14,7 @@ public class PalavraTeste {
 
     public static String palavrao10;
 
+    public static String listaPalavras[] = new String[10];
 
 
 }

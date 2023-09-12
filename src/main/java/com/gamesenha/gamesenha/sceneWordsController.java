@@ -40,7 +40,7 @@ public class sceneWordsController {
 
 
 
-            listaCampos[0] = word1.getText()
+            listaCampos[0] = word1.getText();
             listaCampos[1] = word2.getText();
             listaCampos[2] = word3.getText();
             listaCampos[3] = word4.getText();
@@ -50,6 +50,17 @@ public class sceneWordsController {
             listaCampos[7] = word8.getText();
             listaCampos[8] = word9.getText();
             listaCampos[9] = word10.getText();
+
+            PalavraTeste.listaPalavras[0] = word1.getText();
+            PalavraTeste.listaPalavras[1] = word2.getText();
+            PalavraTeste.listaPalavras[2] = word3.getText();
+            PalavraTeste.listaPalavras[3] = word4.getText();
+            PalavraTeste.listaPalavras[4] = word5.getText();
+            PalavraTeste.listaPalavras[5] = word6.getText();
+            PalavraTeste.listaPalavras[6] = word7.getText();
+            PalavraTeste.listaPalavras[7] = word8.getText();
+            PalavraTeste.listaPalavras[8] = word9.getText();
+            PalavraTeste.listaPalavras[9] = word10.getText();
 
             System.out.println("x");
             GameApplication.changeScreen("rodada");
@@ -65,7 +76,7 @@ public class sceneWordsController {
             PalavraTeste.palavrao8 = word8.getText();
             PalavraTeste.palavrao9 = word9.getText();
             PalavraTeste.palavrao10 = word10.getText();
-            System.out.println(PalavraTeste.palavrao1);
+
 
     }
 
