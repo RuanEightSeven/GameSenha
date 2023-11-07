@@ -17,6 +17,8 @@ public class GameApplication extends Application {
     private static Scene wordsScene;
     private static Scene rodadaScene;
 
+    private static Scene turnoScene;
+
     @Override
     public void start(Stage primaryStage) throws IOException {
 
@@ -34,21 +36,26 @@ public class GameApplication extends Application {
         Parent duplasfxml = fxmlduplas.load(getClass().getResource("telaTeams.fxml"));
         duplasScene = new Scene(duplasfxml);
 
-        FXMLLoader fxmlwords = new FXMLLoader(GameApplication.class.getResource("telaPalavras.fxml"));
-        Parent wordsfxml = fxmlwords.load(getClass().getResource("telaPalavras.fxml"));
+        FXMLLoader fxmlwords = new FXMLLoader(GameApplication.class.getResource("telaPalavra.fxml"));
+        Parent wordsfxml = fxmlwords.load(getClass().getResource("telaPalavra.fxml"));
         wordsScene = new Scene(wordsfxml);
 
         FXMLLoader fxmlrodada = new FXMLLoader(GameApplication.class.getResource("telaRodada.fxml"));
         Parent rodadafxml = fxmlrodada.load(getClass().getResource("telaRodada.fxml"));
         rodadaScene = new Scene(rodadafxml);
 
+
+        FXMLLoader fxmlturno = new FXMLLoader(GameApplication.class.getResource("telaTurno.fxml"));
+        Parent turnofxml = fxmlturno.load(getClass().getResource("telaTurno.fxml"));
+        turnoScene = new Scene(turnofxml);
+
         stage.setScene(inicioScene);
         stage.show();
     }
 
-    public static void changeScreen(String scr){
+    public static void changeScreen(String scr) {
 
-        switch (scr){
+        switch (scr) {
             case "inicio":
                 stage.setScene(inicioScene);
                 stage.setTitle("inicio");
@@ -64,6 +71,11 @@ public class GameApplication extends Application {
             case "rodada":
                 stage.setScene(rodadaScene);
                 stage.setTitle("Rodada");
+                break;
+            case "turno":
+                stage.setScene(turnoScene);
+                stage.setTitle("Turno");
+
         }
 
     }

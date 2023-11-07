@@ -28,7 +28,7 @@ public class sceneTeamsController {
 
        System.out.println(nomeRed1 + " e " + nomeRed2 + " contra " + nomeBlue1 + " e " + nomeBlue2);
 
-       GameApplication.changeScreen("words");
+       GameApplication.changeScreen("turno");
 
    }
 

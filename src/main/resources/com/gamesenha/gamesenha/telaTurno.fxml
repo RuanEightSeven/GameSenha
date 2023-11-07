@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gamesenha.gamesenha.sceneTurnoController">
+   <children>
+      <Region fx:id="areaAzul" layoutX="314.0" layoutY="133.0" onMouseClicked="#clicouAreaAzul" onMouseEntered="#entrouAreaAzul" prefHeight="284.0" prefWidth="285.0" />
+      <Region fx:id="areaVermelho" layoutX="-2.0" layoutY="138.0" onMouseClicked="#clicouAreaVermelho" onMouseEntered="#entrouAreaVermelho" prefHeight="274.0" prefWidth="316.0" />
+      <Label alignment="CENTER" layoutX="142.0" layoutY="63.0" prefHeight="21.0" prefWidth="316.0" text="Escolha quem vai iniciar">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="231.0" text="Vermelho" />
+      <Label layoutX="444.0" layoutY="231.0" text="Azul" />
+      <Label layoutX="509.0" layoutY="180.0" />
+   </children>
+</AnchorPane>
