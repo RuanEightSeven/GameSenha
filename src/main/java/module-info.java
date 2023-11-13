@@ -3,6 +3,6 @@ module com.gamesenha.gamesenha {
     requires javafx.fxml;
 
 
-    opens com.gamesenha.gamesenha to javafx.fxml;
-    exports com.gamesenha.gamesenha;
+    opens Controller to javafx.fxml;
+    exports Controller;
 }

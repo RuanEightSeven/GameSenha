@@ -1,4 +1,4 @@
-package com.gamesenha.gamesenha;
+package Controller;
 
 public class Palavras {
 

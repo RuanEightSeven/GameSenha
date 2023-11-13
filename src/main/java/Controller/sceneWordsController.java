@@ -1,4 +1,4 @@
-package com.gamesenha.gamesenha;
+package Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

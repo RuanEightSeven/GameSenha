@@ -1,5 +1,7 @@
-package com.gamesenha.gamesenha;
+package Controller;
 
+import Model.Match;
+import Model.Players;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -26,7 +28,12 @@ public class sceneTeamsController {
        String nomeBlue1 = txtNomeBlue1.getText();
        String nomeBlue2 = txtNomeBlue2.getText();
 
-       System.out.println(nomeRed1 + " e " + nomeRed2 + " contra " + nomeBlue1 + " e " + nomeBlue2);
+       Players playersRed = new Players(nomeRed1, nomeRed2);
+       Players playersBlue = new Players(nomeBlue1, nomeBlue2);
+
+       Match match = new Match(playersRed,playersBlue);
+       System.out.println(playersRed);
+       System.out.println(playersBlue);
 
        GameApplication.changeScreen("turno");
 

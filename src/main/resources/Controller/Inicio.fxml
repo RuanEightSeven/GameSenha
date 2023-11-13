@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InicioController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="358.0" layoutX="121.0" layoutY="14.0">
+         <image>
+            <Image url="@Sprite1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnClick" contentDisplay="TOP" layoutX="503.0" layoutY="29.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clicouBotao" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: white;" styleClass="f" text="Iniciar" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="btnOpcoes" layoutX="499.0" layoutY="97.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clicouBotaoOpcoes" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: white;" text="Opções" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="97.0" />
+      <Button fx:id="btnCreditos" layoutX="503.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#clicouBotaoCreditos" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: white;" text="Creditos" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>

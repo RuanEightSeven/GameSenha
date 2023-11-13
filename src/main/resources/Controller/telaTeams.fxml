@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.sceneTeamsController">
+   <children>
+      <TextField fx:id="txtNomeRed1" layoutX="43.0" layoutY="263.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="260.0" />
+      <TextField fx:id="txtNomeBlue1" layoutX="386.0" layoutY="255.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="260.0" />
+      <TextField fx:id="txtNomeRed2" layoutX="42.0" layoutY="309.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="40.0" />
+      <TextField fx:id="txtNomeBlue2" layoutX="386.0" layoutY="309.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="40.0" />
+      <Label alignment="CENTER" layoutX="78.0" layoutY="212.0" prefHeight="21.0" prefWidth="113.0" text="Dupla Vermelho" textFill="#c61111">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="409.0" layoutY="212.0" prefHeight="21.0" prefWidth="113.0" text="Dupla Azul" textFill="#3b12c4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="260.0" />
+      <Button fx:id="btnClick" alignment="CENTER" contentDisplay="CENTER" layoutX="261.0" layoutY="349.0" mnemonicParsing="false" onAction="#clicouBotao" style="-fx-background-color: white;" text="Começar" />
+      <ImageView fitHeight="138.0" fitWidth="313.0" layoutX="144.0" layoutY="46.0">
+         <image>
+            <Image url="@Sprite1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
